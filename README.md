@@ -1,2 +1,2 @@
-# TNSTS
-Totally Not a Shady Trading Simulator
+# TASTES
+  Totally Accurate Sophisticated Trading Experience Simulator
