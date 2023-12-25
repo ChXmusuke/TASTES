@@ -1,9 +1,9 @@
+#ifndef STOCK_H_
+#define STOCK_H_
+
 #include <vector>
 #include <string>
 #include <iostream>
-
-#ifndef STOCK_H_
-#define STOCK_H_
 
 class Stock {
  private:

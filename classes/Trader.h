@@ -1,9 +1,9 @@
+#ifndef TRADER_H_
+#define TRADER_H_
+
 #include "Stock.h"
 #include "Position.h"
 #include <vector>
-
-#ifndef TRADER_H_
-#define TRADER_H_
 
 class Trader {
  private:
