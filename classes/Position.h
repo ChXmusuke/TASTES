@@ -6,7 +6,7 @@
 
 struct Position {
   Stock &stock;
-  int shares = 0;
+  double shares = 0;
 
   [[nodiscard]] double value() const;
 };

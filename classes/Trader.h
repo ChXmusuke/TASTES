@@ -10,7 +10,7 @@ class Trader {
   double balance;
   Portfolio &portfolio;
 
-  bool transact(size_t pIndex, int shares);
+  bool transact(size_t pIndex, double shares);
 
  public:
   explicit Trader(double balance, Portfolio &portfolio);
@@ -22,8 +22,8 @@ class Trader {
   [[nodiscard]]
   Portfolio &getPortfolio() const;
 
-  bool buy(size_t pIndex, int shares);
-  bool sell(size_t pIndex, int shares);
+  bool buy(size_t pIndex, double shares);
+  bool sell(size_t pIndex, double shares);
 };
 
 #endif

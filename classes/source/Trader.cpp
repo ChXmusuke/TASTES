@@ -17,7 +17,7 @@ double Trader::getCashBalance() const {
 
 Portfolio &Trader::getPortfolio() const { return portfolio; }
 
-bool Trader::transact(size_t pIndex, int shares) {
+bool Trader::transact(size_t pIndex, double shares) {
   Position &position = portfolio[pIndex];
   double transactionValue = shares * position.stock.getPrice();
   if (shares < 0 and shares > position.shares) return false;
@@ -29,10 +29,10 @@ bool Trader::transact(size_t pIndex, int shares) {
   return true;
 }
 
-bool Trader::buy(size_t pIndex, int shares) {
+bool Trader::buy(size_t pIndex, double shares) {
   return transact(pIndex, shares);
 }
 
-bool Trader::sell(size_t pIndex, int shares) {
+bool Trader::sell(size_t pIndex, double shares) {
   return transact(pIndex, -shares);
 }
